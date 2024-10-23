@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void p(char *param1)
+void p(char *arg)
 {
-    printf(param1);
+    printf(arg);
     return;
 }
 
 void n(void)
 {
-    char local20[520];
+    char buffer[520];
 
-    fgets(local20, 512, stdin);
-    p(local20);
+    fgets(buffer, 512, stdin);
+    p(buffer);
     if (m == 16930116)
     {
         system("/bin/cat /home/user/level5/.pass");
